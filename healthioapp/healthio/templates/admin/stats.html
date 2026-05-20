@@ -1,0 +1,10 @@
+{% extends 'admin/base_site.html' %}
+{% block content %}
+<h1>THỐNG KÊ CÁC BẢI TẬP CÓ SẴN</h1>
+<h2>Số lượng bài tập có sẵn: {{ count }}</h2>
+<ul>
+    {% for c in exercise %}
+    <li>{{ c.name }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
