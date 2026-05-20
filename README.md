@@ -1,6 +1,6 @@
 # NTGroup_Healthio
 
-# Bài tập lớn môn Các công nghệ lậpp trình hiện đại
+# Bài tập lớn môn Các công nghệ lập trình hiện đại
 ## Thành viên
 | MSSV | Họ tên
 |------|--------
@@ -10,44 +10,30 @@
 ### 1. Tổng quan dự án
     Ứng dụng quản lí sức khoẻ và theo dõi hoạt động cá nhân
 ### 2. Các chức năng chính và ràng buộc của hệ thống 
-#### Đặt ghế: 
-- Người dùng phải đăng nhập.
-- Không được đặt ghế đã có người đặt.
-- Một người chỉ được đặt tối đa 8 ghế mỗi suất chiếu.
-- Không được đặt ghế sau khi phim đã bắt đầu chiếu.
-- Ghế phải thuộc phòng chiếu của suất chiếu đó.
-#### Thanh toán vé: 
-- Phải thanh toán trong 10 phút sau khi chọn ghế.
-- Nếu quá thời gian → huỷ giữ ghế.
-- Không được thanh toán nếu ghế đã bị huỷ giữ.
-#### Huỷ vé: 
-- Chỉ được huỷ trước 2 giờ trước suất chiếu.
-- Không được huỷ nếu vé đã check-in.
+#### Xác thực và phân quyền: 
+- Đăng nhập, đăng ký với vai trò người dùng hoặc chuyên gia dinh dưỡng/huấn luyện
+viên.
+- Người dùng có thể chọn chế độ theo dõi cá nhân hoặc kết nối với chuyên gia để
+nhận tư vấn.
+#### Quản lý hồ sơ sức khỏe:
+- Người dùng nhập thông tin cá nhân: chiều cao, cân nặng, tuổi, mục tiêu sức khỏe.
+- Theo dõi chỉ số BMI, lượng nước uống, số bước đi, nhịp tim.
+#### Lập kế hoạch tập luyện và dinh dưỡng:
+- Tạo lịch tập luyện cá nhân với các bài tập gợi ý hoặc tự thêm bài tập.
+#### Theo dõi và nhắc nhở:
+- Đặt nhắc nhở uống nước, tập luyện, nghỉ ngơi.
+- Thống kê số liệu hàng tuần/tháng bằng biểu đồ: thời gian tập luyện, lượng calo tiêu thụ.
+#### Tương tác và hỗ trợ:
+- Người dùng có thể viết nhật ký sức khỏe, lưu lại cảm nhận sau mỗi buổi tập.
+  
 ## Các công nghệ sử dụng 
-
-### Backend: Python & Flask Framework
-+ Xây dựng, kiểm tra các ràng buộc dữ liệu, ràng buộc hệ thống.
-+ Điều hướng luồng dữ liệu
-+ Quản lý phiên đăng nhập
-+ Quản lý luồng thời gian đếm ngược 10 phút giữ ghế và check-in ghế tự động
-+ Tích hợp cổng thanh toán
-
-### Frontend: HTML5, CSS3, JavaScript
-+ Xây dựng giao diện hệ thống trực quan
-+ Cập nhật các thông tin phù hợp dựa trên lựa chọn của người dùng.
-
+### Backend: 
+- Django & Django REST Framework: Xây dựng các RESful API, xử lí các logic nghiệp vụ và phân quyền người dùng.
+- OAuth 2.0 : Cơ chế xác thực và phân quyền người dùng, đảm bảo an toàn cho dữ liệu cá nhân.
 ### Database: MySQLWorkbench
-+ Lưu trữ toàn bộ thông tin về phim, lịch chiếu, người dùng, phòng chiếu, trạng thái ghế và hóa đơn.
-+ Sử dụng cơ chế khóa dữ liệu để đảm bảo tính toàn vẹn khi có tranh chấp ghế.
-
-
-### Kiểm thử hệ thống
-- Pytest: Kiểm tra các ràng buộc về dữ liệu và chức năng của hệ thống tại tầng service và controller.
-- Postman: Kiểm tra các API Endpoint để đảm bảo dữ liệu được trả về đúng theo mong đợi.
-- Excel: Xây dựng kịch bản kiểm thử và ghi nhận kết quả thủ công.
-- Selenium: Thực hiện các kịch bản kiểm thử tự động trên trình duyệt.
-
-
+- Lưu trữ toàn bộ thông tin về người dùng, dữ liệu người dùng.
+### Khác
+- Swagger: Trực quan hoá các API, hỗ trợ việc kết nối với Frontend.
 #### Cảm ơn bạn đã đọc!
 
 
