@@ -83,7 +83,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'healthiodb',
         'USER': 'root',
-        'PASSWORD': 'ngan1312',
+        'PASSWORD': 'root',
         'HOST': '' # mặc định localhost
         }
 }
