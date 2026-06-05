@@ -1,0 +1,55 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="1">
+            <item index="0" class="java.lang.String" itemvalue="request.args.get(" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="ignoredPackages">
+        <list>
+          <option value="babel" />
+          <option value="blinker" />
+          <option value="certifi" />
+          <option value="click" />
+          <option value="cloudinary" />
+          <option value="colorama" />
+          <option value="Flask" />
+          <option value="Flask-Admin" />
+          <option value="flask-babel" />
+          <option value="Flask-Login" />
+          <option value="Flask-Mail" />
+          <option value="Flask-SQLAlchemy" />
+          <option value="greenlet" />
+          <option value="itsdangerous" />
+          <option value="Jinja2" />
+          <option value="MarkupSafe" />
+          <option value="PyMySQL" />
+          <option value="pytz" />
+          <option value="six" />
+          <option value="SQLAlchemy" />
+          <option value="typing_extensions" />
+          <option value="urllib3" />
+          <option value="Werkzeug" />
+          <option value="WTForms" />
+          <option value="appdirs" />
+          <option value="atomicwrites" />
+          <option value="jsonpointer" />
+          <option value="matplotlib" />
+          <option value="pyasn1-modules" />
+          <option value="pyls-spyder" />
+          <option value="PyQt5" />
+          <option value="PyQtWebEngine" />
+          <option value="setuptools" />
+          <option value="wheel" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

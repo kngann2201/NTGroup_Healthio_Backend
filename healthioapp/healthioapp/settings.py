@@ -20,7 +20,7 @@ MEDIA_ROOT = '%s/healthio/static/' % BASE_DIR
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'suthiwnevnesytneewt=+?yadyreveyeppahswt'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -92,9 +92,9 @@ AUTH_USER_MODEL = 'healthio.User'
 
 import cloudinary.api
 cloudinary.config(
-    cloud_name='dkzxdp1gi',
-    api_key='889343733763378',
-    api_secret='AfqkwYpSy0i8oRU4XN4bRC-5qIg'
+    cloud_name='',
+    api_key='',
+    api_secret=''
 )
 
 CKEDITOR_UPLOAD_PATH = "static/images/ckeditors/"
@@ -144,7 +144,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 
-CLIENT_ID = 'gf8pQegSrzxeJpwiV5zrL2yB7XjRKyifL6WZEaiv'
-CLIENT_SECRET = 'Hj4zf40nhFt98Lj86IMngT8M9XBH1VE877sjGE4mdZnD2NOgHAZ6UywNVGL9sy7fBTiAzxV2r2TSS3WsdY1TBKKXay22NzxHuBqKBQYWnQeeN41tA65LIWgRqs62wJ7y'
+CLIENT_ID = ''
+CLIENT_SECRET = ''
 
 
